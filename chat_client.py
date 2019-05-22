@@ -3,24 +3,22 @@
 import sys, socket, select
  
 def chat_client():
-    if(len(sys.argv) < 3) :
-        print 'Usage : python chat_client.py hostname port'
-        sys.exit()
+    # if(len(sys.argv) < 3) :
+    #     print('Usage : python chat_client.py hostname port')
+    #     sys.exit()
 
-    host = sys.argv[1]
-    port = int(sys.argv[2])
+    host = "172.16.39.27"
+    port = 9009
      
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.settimeout(2)
+    s.settimeout(10)
      
     # connect to remote host
-    try :
-        s.connect((host, port))
-    except :
-        print 'Unable to connect'
-        sys.exit()
-     
-    print 'Connected to remote host. You can start sending messages'
+    s.connect((host, port))
+    # print('Unable to connect')
+    # sys.exit()
+
+    print('Connected to remote host. You can start sending messages')
     sys.stdout.write('[Me] '); sys.stdout.flush()
      
     while 1:
@@ -34,7 +32,7 @@ def chat_client():
                 # incoming message from remote server, s
                 data = sock.recv(4096)
                 if not data :
-                    print '\nDisconnected from chat server'
+                    print('\nDisconnected from chat server')
                     sys.exit()
                 else :
                     #print data
@@ -47,7 +45,7 @@ def chat_client():
                 s.send(msg)
                 sys.stdout.write('[Me] '); sys.stdout.flush() 
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     sys.exit(chat_client())
 
