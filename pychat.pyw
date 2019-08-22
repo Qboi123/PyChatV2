@@ -1,3 +1,4 @@
+
 # Importeren sys module
 import sys
 import threading
@@ -599,23 +600,29 @@ The "color" is for the background"""
     global colorNr
     global colNr
     global max_len
-    main_body_text.config(state=NORMAL)
-    for i in range(0, len("[" + username + "]: " + text), max_len):
-        textB = text[i:i + (max_len - len("[" + username + "]: "))]
-        main_body_text.insert(END, "[" + username + "]: ")
+    if not isCLI:
+        main_body_text.config(state=NORMAL)
+        for i in range(0, len("[" + username + "]: " + text), max_len):
+            textB = text[i:i + (max_len - len("[" + username + "]: "))]
+            main_body_text.insert(END, "[" + username + "]: ")
 
-        main_body_text.insert(END, textB)
-        dat = ""
-        for i in range(0, max_len - len("[" + username + "]: " + textB)):
-            dat = dat + " "
-        main_body_text.insert(END, dat)
-        main_body_text.tag_add("color" + str(colorNr), "1." + str(colNr), "1." + str(colNr + max_len))
-        main_body_text.tag_config("color" + str(colorNr), foreground=fg, background=bg, font=("Courier New", 11))
-        colNr += max_len
-        colorNr += 1
-    main_body_text.yview(END)
-    main_body_text.config(state=DISABLED)
+            main_body_text.insert(END, textB)
+            dat = ""
+            for i in range(0, max_len - len("[" + username + "]: " + textB)):
+                dat = dat + " "
+            main_body_text.insert(END, dat)
+            main_body_text.tag_add("color" + str(colorNr), "1." + str(colNr), "1." + str(colNr + max_len))
+            main_body_text.tag_config("color" + str(colorNr), foreground=fg, background=bg, font=("Courier New", 11))
+            colNr += max_len
+            colorNr += 1
+        main_body_text.yview(END)
+        main_body_text.config(state=DISABLED)
+    else:
+        for i in range(0, len("[" + username + "]: " + text), max_len):
+            textB = text[i:i + (max_len - len("[" + username + "]: "))]
+            print("[" + username + "]: ", end="")
 
+            print(textB)
 
 #############################
 def writeError(text='', username=''):
@@ -692,79 +699,81 @@ class Server(threading.Thread):
         self.port = port
 
     def run(self):
-        global conn_array
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.bind(('', self.port))
+        while True:
+            global conn_array
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.bind(('', self.port))
 
-        if len(conn_array) == 0:
-            writeSucces("Internet verbinding is goed, wachten op verbindingen op poort: " +
-                        str(self.port), "server")
-        s.listen(1)
-        global conn_init
-        conn_init, addr_init = s.accept()
-        serv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        serv.bind(('', 0))  # get a random empty port
-        serv.listen(1)
+            if len(conn_array) == 0:
+                writeSucces("Internet verbinding is goed, wachten op verbindingen op poort: " +
+                            str(self.port), "server")
+            s.listen(1)
+            global conn_init
+            conn_init, addr_init = s.accept()
+            serv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            serv.bind(('', 0))  # get a random empty port
+            serv.listen(1)
 
-        portVal = str(serv.getsockname()[1])
-        if len(portVal) == 5:
-            conn_init.send(portVal.encode())
-        else:
-            conn_init.send(("0" + portVal).encode())
+            portVal = str(serv.getsockname()[1])
+            if len(portVal) == 5:
+                conn_init.send(portVal.encode())
+            else:
+                conn_init.send(("0" + portVal).encode())
 
-        conn_init.close()
-        conn, addr = serv.accept()
-        conn_array.append(conn)  # add an array entry for this connection
-        writeSucces("Verbonden bij " + str(addr[0]), "server")
+            conn_init.close()
+            conn, addr = serv.accept()
+            conn_array.append(conn)  # add an array entry for this connection
+            writeSucces("Verbonden bij " + str(addr[0]), "server")
 
-        global statusConnect
-        statusConnect.set("Verbinding verbreken")
-        connecter.config(state=NORMAL)
+            global statusConnect
+            if not isCLI:
+                statusConnect.set("Verbinding verbreken")
+                connecter.config(state=NORMAL)
 
-        # create the numbers for my encryption
-        prime = RandomInt(1000, 9000)
-        while not isPrime(prime):
+            # create the numbers for my encryption
             prime = RandomInt(1000, 9000)
-        base = RandomInt(20, 100)
-        a = RandomInt(20, 100)
+            while not isPrime(prime):
+                prime = RandomInt(1000, 9000)
+            base = RandomInt(20, 100)
+            a = RandomInt(20, 100)
 
-        # send the numbers (base, prime, A)
-        conn.send(formatNumber(len(str(base))).encode())
-        conn.send(str(base).encode())
+            # send the numbers (base, prime, A)
+            conn.send(formatNumber(len(str(base))).encode())
+            conn.send(str(base).encode())
 
-        conn.send(formatNumber(len(str(prime))).encode())
-        conn.send(str(prime).encode())
+            conn.send(formatNumber(len(str(prime))).encode())
+            conn.send(str(prime).encode())
 
-        conn.send(formatNumber(len(str(pow(base, a) % prime))).encode())
-        conn.send(str(pow(base, a) % prime).encode())
+            conn.send(formatNumber(len(str(pow(base, a) % prime))).encode())
+            conn.send(str(pow(base, a) % prime).encode())
 
-        # get B
-        data = conn.recv(4)
-        data = conn.recv(int(data.decode()))
-        b = int(data.decode())
+            # get B
+            data = conn.recv(4)
+            data = conn.recv(int(data.decode()))
+            b = int(data.decode())
 
-        # calculate the encryption key
-        global secret_array
-        secret = pow(b, a) % prime
-        # store the encryption key by the connection
-        secret_array[conn] = secret
+            # calculate the encryption key
+            global secret_array
+            secret = pow(b, a) % prime
+            # store the encryption key by the connection
+            secret_array[conn] = secret
 
-        conn.send(formatNumber(len(username)).encode())
-        conn.send(username.encode())
+            conn.send(formatNumber(len(username)).encode())
+            conn.send(username.encode())
 
-        data = conn.recv(4)
-        data = conn.recv(int(data.decode()))
-        if data.decode() != "Ik":
-            username_array[conn] = data.decode()
-            contact_array[str(addr[0])] = [str(self.port), data.decode()]
-        else:
-            username_array[conn] = addr[0]
-            contact_array[str(addr[0])] = [str(self.port), "No_nick"]
+            data = conn.recv(4)
+            data = conn.recv(int(data.decode()))
+            if data.decode() != "Ik":
+                username_array[conn] = data.decode()
+                contact_array[str(addr[0])] = [str(self.port), data.decode()]
+            else:
+                username_array[conn] = addr[0]
+                contact_array[str(addr[0])] = [str(self.port), "No_nick"]
 
-        passFriends(conn)
-        threading.Thread(target=runner, args=(conn, secret)).start()
-        # Server(self.port).start()
-        self.start()
+            passFriends(conn)
+            threading.Thread(target=runner, args=(conn, secret)).start()
+            # Server(self.port).start()
+        # self.start()
 
 
 # Client chat
@@ -845,6 +854,7 @@ def runner(conn, secret):
     # black_colors = ['cyan', 'turquoise', 'cyan', 'pink', 'yellow', 'white', 'lightGray']
     while 1:
         data = netCatch(conn, secret)
+        print(data)
         if data != 1:
             if data.find("*Error") != -1:
                 writeToScreen('white', "red",
@@ -1052,3 +1062,15 @@ if __name__ == "__main__":
 
         # Slaat de contacten op
         dump_contacts()
+
+
+while True:
+    try:
+        port = int(input("port: "))
+        if port > 65535 or port < 0:
+            print("ERROR: Port number must be between 0 and 65535!")
+        break
+    except:
+        print("ERROR: Invalid port!")
+
+Server(port).start()
