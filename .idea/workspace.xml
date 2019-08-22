@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f4c947c-82a4-45ad-9119-db85a70cb38a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libtransfer/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libtransfer/mytext.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libtransfer2/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transvert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pychat.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/pychat.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libtransfer/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/libtransfer/client.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +45,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libtransfer/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="182">
+              <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+              <folding>
+                <element signature="e#13#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,10 +129,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="718" />
-    <option name="y" value="262" />
-    <option name="width" value="1040" />
-    <option name="height" value="816" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="656" />
+    <option name="height" value="456" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -341,7 +339,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35142255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -426,8 +423,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libtransfer/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="182">
+          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+          <folding>
+            <element signature="e#13#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

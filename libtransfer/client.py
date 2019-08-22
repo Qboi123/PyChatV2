@@ -4,8 +4,11 @@ import math
 
 import socket                   # Import socket module
 
+print("Your Hostname is: %s " % socket.gethostname())
+host = input("IP: ")
+
 server = socket.socket()             # Create a socket object
-host = socket.gethostname()     # Get local machine name
+# host = socket.gethostname()     # Get local machine name
 print(host)
 port = 60000                    # Reserve a port for your service.
 
