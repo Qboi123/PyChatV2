@@ -4,10 +4,10 @@ import socket                   # Import socket module
 import os
 import threading
 
-port = 60000                    # Reserve a port for your service.
+port = 60000                    # Reserve a port_ for your service.
 s = socket.socket()             # Create a socket object
 host = socket.gethostname()     # Get local machine name
-s.bind((host, port))            # Bind to the port
+s.bind((host, port))            # Bind to the port_
 s.listen(5)                     # Now wait for client connection.
 
 print('Server listening....')

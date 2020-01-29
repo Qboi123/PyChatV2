@@ -1,3 +1,9 @@
 
 .idea/workspace.xml
 *.mp3
+.idea
+*.iml
+/bin/
+/obj/
+/data/
+/tests/

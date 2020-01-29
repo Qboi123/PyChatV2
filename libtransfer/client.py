@@ -10,7 +10,7 @@ host = input("IP: ")
 server = socket.socket()             # Create a socket object
 # host = socket.gethostname()     # Get local machine name
 print(host)
-port = 60000                    # Reserve a port for your service.
+port = 60000                    # Reserve a port_ for your service.
 
 server.connect((host, port))
 

@@ -2,96 +2,998 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f4c947c-82a4-45ad-9119-db85a70cb38a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nzt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/VCRUNTIME140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/_bz2.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/_hashlib.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/_lzma.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/_socket.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/_ssl.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/_tkinter.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/libcrypto-1_1-x64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/libssl-1_1-x64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/pychat.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/pychat.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/pyexpat.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/python37.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/select.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/auto.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/clock.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/ascii.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/big5.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1250.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1251.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1252.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1253.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1254.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1255.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1256.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1257.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp1258.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp437.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp737.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp775.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp850.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp852.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp855.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp857.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp860.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp861.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp862.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp863.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp864.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp865.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp866.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp869.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp874.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp932.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp936.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp949.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/cp950.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/dingbats.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/ebcdic.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/euc-cn.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/euc-jp.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/euc-kr.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/gb12345.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/gb1988.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/gb2312-raw.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/gb2312.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso2022-jp.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso2022-kr.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso2022.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-1.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-10.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-13.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-14.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-15.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-16.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-2.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-3.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-4.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-5.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-6.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-7.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-8.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/iso8859-9.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/jis0201.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/jis0208.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/jis0212.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/koi8-r.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/koi8-u.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/ksc5601.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macCentEuro.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macCroatian.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macCyrillic.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macDingbats.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macGreek.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macIceland.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macJapan.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macRoman.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macRomania.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macThai.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macTurkish.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/macUkraine.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/shiftjis.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/symbol.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/encoding/tis-620.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/history.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/http1.0/http.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/http1.0/pkgIndex.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/init.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/af.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/af_za.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ar.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ar_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ar_jo.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ar_lb.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ar_sy.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/be.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/bg.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/bn.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/bn_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ca.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/cs.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/da.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/de.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/de_at.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/de_be.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/el.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_au.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_be.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_bw.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_ca.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_gb.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_hk.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_ie.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_nz.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_ph.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_sg.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_za.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/en_zw.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/eo.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_ar.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_bo.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_cl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_co.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_cr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_do.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_ec.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_gt.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_hn.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_mx.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_ni.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_pa.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_pe.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_pr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_py.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_sv.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_uy.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/es_ve.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/et.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/eu.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/eu_es.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fa.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fa_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fa_ir.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fi.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fo.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fo_fo.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fr_be.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fr_ca.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/fr_ch.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ga.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ga_ie.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/gl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/gl_es.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/gv.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/gv_gb.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/he.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/hi.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/hi_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/hr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/hu.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/id.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/id_id.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/is.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/it.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/it_ch.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ja.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/kl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/kl_gl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ko.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ko_kr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/kok.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/kok_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/kw.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/kw_gb.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/lt.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/lv.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/mk.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/mr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/mr_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ms.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ms_my.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/mt.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/nb.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/nl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/nl_be.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/nn.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/pl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/pt.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/pt_br.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ro.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ru.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ru_ua.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/sh.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/sk.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/sl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/sq.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/sr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/sv.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/sw.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ta.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/ta_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/te.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/te_in.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/th.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/tr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/uk.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/vi.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/zh.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/zh_cn.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/zh_hk.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/zh_sg.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/msgs/zh_tw.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/opt0.4/optparse.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/opt0.4/pkgIndex.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/package.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/parray.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/safe.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tclIndex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tm.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Abidjan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Accra" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Addis_Ababa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Algiers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Asmara" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Asmera" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Bamako" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Bangui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Banjul" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Bissau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Blantyre" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Brazzaville" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Bujumbura" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Cairo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Casablanca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Ceuta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Conakry" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Dakar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Dar_es_Salaam" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Djibouti" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Douala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/El_Aaiun" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Freetown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Gaborone" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Harare" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Johannesburg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Juba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Kampala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Khartoum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Kigali" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Kinshasa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Lagos" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Libreville" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Lome" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Luanda" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Lubumbashi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Lusaka" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Malabo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Maputo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Maseru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Mbabane" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Mogadishu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Monrovia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Nairobi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Ndjamena" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Niamey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Nouakchott" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Ouagadougou" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Porto-Novo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Sao_Tome" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Timbuktu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Tripoli" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Tunis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Africa/Windhoek" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Adak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Anchorage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Anguilla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Antigua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Araguaina" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Buenos_Aires" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Catamarca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/ComodRivadavia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Cordoba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Jujuy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/La_Rioja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Mendoza" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Rio_Gallegos" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Salta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/San_Juan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/San_Luis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Tucuman" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Argentina/Ushuaia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Aruba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Asuncion" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Atikokan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Atka" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Bahia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Bahia_Banderas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Barbados" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Belem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Belize" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Blanc-Sablon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Boa_Vista" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Bogota" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Boise" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Buenos_Aires" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Cambridge_Bay" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Campo_Grande" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Cancun" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Caracas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Catamarca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Cayenne" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Cayman" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Chicago" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Chihuahua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Coral_Harbour" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Cordoba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Costa_Rica" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Creston" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Cuiaba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Curacao" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Danmarkshavn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Dawson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Dawson_Creek" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Denver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Detroit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Dominica" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Edmonton" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Eirunepe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/El_Salvador" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Ensenada" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Fort_Nelson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Fort_Wayne" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Fortaleza" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Glace_Bay" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Godthab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Goose_Bay" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Grand_Turk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Grenada" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Guadeloupe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Guatemala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Guayaquil" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Guyana" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Halifax" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Havana" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Hermosillo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indiana/Indianapolis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indiana/Knox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indiana/Marengo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indiana/Petersburg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indiana/Tell_City" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indiana/Vevay" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indiana/Vincennes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indiana/Winamac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Indianapolis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Inuvik" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Iqaluit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Jamaica" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Jujuy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Juneau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Kentucky/Louisville" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Kentucky/Monticello" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Knox_IN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Kralendijk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/La_Paz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Lima" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Los_Angeles" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Louisville" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Lower_Princes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Maceio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Managua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Manaus" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Marigot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Martinique" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Matamoros" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Mazatlan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Mendoza" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Menominee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Merida" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Metlakatla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Mexico_City" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Miquelon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Moncton" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Monterrey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Montevideo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Montreal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Montserrat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Nassau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/New_York" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Nipigon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Nome" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Noronha" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/North_Dakota/Beulah" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/North_Dakota/Center" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/North_Dakota/New_Salem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Ojinaga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Panama" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Pangnirtung" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Paramaribo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Phoenix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Port-au-Prince" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Port_of_Spain" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Porto_Acre" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Porto_Velho" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Puerto_Rico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Punta_Arenas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Rainy_River" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Rankin_Inlet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Recife" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Regina" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Resolute" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Rio_Branco" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Rosario" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Santa_Isabel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Santarem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Santiago" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Santo_Domingo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Sao_Paulo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Scoresbysund" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Shiprock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Sitka" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/St_Barthelemy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/St_Johns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/St_Kitts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/St_Lucia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/St_Thomas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/St_Vincent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Swift_Current" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Tegucigalpa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Thule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Thunder_Bay" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Tijuana" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Toronto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Tortola" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Vancouver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Virgin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Whitehorse" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Winnipeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Yakutat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/America/Yellowknife" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Casey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Davis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/DumontDUrville" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Macquarie" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Mawson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/McMurdo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Palmer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Rothera" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/South_Pole" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Syowa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Troll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Antarctica/Vostok" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Arctic/Longyearbyen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Aden" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Almaty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Amman" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Anadyr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Aqtau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Aqtobe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Ashgabat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Ashkhabad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Atyrau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Baghdad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Bahrain" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Baku" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Bangkok" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Barnaul" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Beirut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Bishkek" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Brunei" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Calcutta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Chita" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Choibalsan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Chongqing" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Chungking" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Colombo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Dacca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Damascus" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Dhaka" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Dili" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Dubai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Dushanbe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Famagusta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Gaza" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Harbin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Hebron" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Ho_Chi_Minh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Hong_Kong" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Hovd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Irkutsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Istanbul" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Jakarta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Jayapura" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Jerusalem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Kabul" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Kamchatka" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Karachi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Kashgar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Kathmandu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Katmandu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Khandyga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Kolkata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Krasnoyarsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Kuala_Lumpur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Kuching" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Kuwait" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Macao" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Macau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Magadan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Makassar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Manila" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Muscat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Nicosia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Novokuznetsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Novosibirsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Omsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Oral" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Phnom_Penh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Pontianak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Pyongyang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Qatar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Qyzylorda" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Rangoon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Riyadh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Saigon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Sakhalin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Samarkand" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Seoul" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Shanghai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Singapore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Srednekolymsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Taipei" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Tashkent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Tbilisi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Tehran" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Tel_Aviv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Thimbu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Thimphu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Tokyo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Tomsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Ujung_Pandang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Ulaanbaatar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Ulan_Bator" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Urumqi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Ust-Nera" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Vientiane" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Vladivostok" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Yakutsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Yangon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Yekaterinburg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Asia/Yerevan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Azores" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Bermuda" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Canary" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Cape_Verde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Faeroe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Faroe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Jan_Mayen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Madeira" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Reykjavik" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/South_Georgia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/St_Helena" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Atlantic/Stanley" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/ACT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Adelaide" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Brisbane" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Broken_Hill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Canberra" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Currie" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Darwin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Eucla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Hobart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/LHI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Lindeman" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Lord_Howe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Melbourne" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/NSW" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/North" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Perth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Queensland" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/South" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Sydney" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Tasmania" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Victoria" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/West" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Australia/Yancowinna" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Brazil/Acre" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Brazil/DeNoronha" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Brazil/East" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Brazil/West" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/CET" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/CST6CDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/Atlantic" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/Central" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/East-Saskatchewan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/Eastern" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/Mountain" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/Newfoundland" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/Pacific" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/Saskatchewan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Canada/Yukon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Chile/Continental" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Chile/EasterIsland" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Cuba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/EET" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/EST" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/EST5EDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Egypt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Eire" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT+9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT-9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/GMT0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/Greenwich" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/UCT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/UTC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/Universal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Etc/Zulu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Amsterdam" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Andorra" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Astrakhan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Athens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Belfast" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Belgrade" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Berlin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Bratislava" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Brussels" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Bucharest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Budapest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Busingen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Chisinau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Copenhagen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Dublin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Gibraltar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Guernsey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Helsinki" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Isle_of_Man" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Istanbul" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Jersey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Kaliningrad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Kiev" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Kirov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Lisbon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Ljubljana" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/London" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Luxembourg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Madrid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Malta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Mariehamn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Minsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Monaco" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Moscow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Nicosia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Oslo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Paris" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Podgorica" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Prague" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Riga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Rome" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Samara" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/San_Marino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Sarajevo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Saratov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Simferopol" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Skopje" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Sofia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Stockholm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Tallinn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Tirane" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Tiraspol" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Ulyanovsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Uzhgorod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Vaduz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Vatican" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Vienna" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Vilnius" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Volgograd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Warsaw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Zagreb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Zaporozhye" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Europe/Zurich" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/GB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/GB-Eire" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/GMT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/GMT+0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/GMT-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/GMT0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Greenwich" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/HST" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Hongkong" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Iceland" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Antananarivo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Chagos" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Christmas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Cocos" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Comoro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Kerguelen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Mahe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Maldives" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Mauritius" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Mayotte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Indian/Reunion" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Iran" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Israel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Jamaica" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Japan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Kwajalein" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Libya" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/MET" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/MST" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/MST7MDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Mexico/BajaNorte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Mexico/BajaSur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Mexico/General" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/NZ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/NZ-CHAT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Navajo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/PRC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/PST8PDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Apia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Auckland" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Bougainville" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Chatham" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Chuuk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Easter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Efate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Enderbury" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Fakaofo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Fiji" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Funafuti" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Galapagos" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Gambier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Guadalcanal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Guam" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Honolulu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Johnston" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Kiritimati" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Kosrae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Kwajalein" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Majuro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Marquesas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Midway" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Nauru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Niue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Norfolk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Noumea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Pago_Pago" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Palau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Pitcairn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Pohnpei" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Ponape" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Port_Moresby" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Rarotonga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Saipan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Samoa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Tahiti" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Tarawa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Tongatapu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Truk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Wake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Wallis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Pacific/Yap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Poland" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Portugal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/ROC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/ROK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Singapore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/AST4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/AST4ADT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/CST6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/CST6CDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/EST5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/EST5EDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/HST10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/MST7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/MST7MDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/PST8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/PST8PDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/YST9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/SystemV/YST9YDT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Turkey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/UCT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Alaska" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Aleutian" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Arizona" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Central" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/East-Indiana" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Eastern" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Hawaii" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Indiana-Starke" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Michigan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Mountain" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Pacific" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Pacific-New" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/US/Samoa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/UTC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Universal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/W-SU" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/WET" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/tzdata/Zulu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl/word.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tcl86t.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/bgerror.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/button.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/choosedir.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/clrpick.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/comdlg.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/console.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/dialog.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/entry.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/focus.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/fontchooser.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/iconlist.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/icons.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/logo.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/logo100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/logo64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/logoLarge.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/logoMed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/pwrdLogo.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/pwrdLogo100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/pwrdLogo150.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/pwrdLogo175.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/pwrdLogo200.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/pwrdLogo75.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/images/tai-ku.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/license.terms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/listbox.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/megawidget.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/menu.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/mkpsenc.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgbox.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/cs.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/da.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/de.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/el.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/en.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/en_gb.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/eo.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/es.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/fr.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/hu.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/it.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/nl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/pl.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/pt.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/ru.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/msgs/sv.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/obsolete.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/optMenu.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/palette.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/panedwindow.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/pkgIndex.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/safetk.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/scale.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/scrlbar.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/spinbox.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/tclIndex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/tearoff.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/text.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/tk.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/tkfbox.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/altTheme.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/aquaTheme.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/button.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/clamTheme.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/classicTheme.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/combobox.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/cursors.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/defaults.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/entry.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/fonts.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/menubutton.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/notebook.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/panedwindow.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/progress.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/scale.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/scrollbar.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/sizegrip.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/spinbox.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/treeview.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/ttk.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/utils.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/vistaTheme.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/winTheme.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/ttk/xpTheme.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/unsupported.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk/xmfbox.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/tk86t.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/ucrtbase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyChat.V2.1/unicodedata.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Qplay-Bubbles-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QplayBubbles-Releaes-55037b6b51a5947bc657874611510adb5f0b0c4e.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QplayBubbles-Releaes-91f192b68b0c4e2bdd85830562620c8aee3385d2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libtransfer/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/libtransfer/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libtransfer2/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/libtransfer2/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pychat.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/pychat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transvert.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pychat.pyw">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1527">
-              <caret line="1075" column="20" selection-start-line="1075" selection-start-column="20" selection-end-line="1075" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libtransfer2/server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="29" column="65" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="65" />
-              <folding>
-                <element signature="e#13#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libtransfer/mytext.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/libtransfer/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-              <folding>
-                <element signature="e#13#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libtransfer/received_file">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="752" selection-start-line="752" selection-end-line="752" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/threading.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="842" selection-start-line="842" selection-end-line="842" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitattributes">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,88 +1002,32 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>main_body_text.insert</find>
-      <find>input()</find>
-      <find>isCLI</find>
-      <find>input</find>
-      <find>= input(</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>print(</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/chat_server.py" />
-        <option value="$PROJECT_DIR$/transvert.py" />
-        <option value="$PROJECT_DIR$/pychat.pyw" />
-        <option value="$PROJECT_DIR$/libtransfer/mytext.txt" />
-        <option value="$PROJECT_DIR$/libtransfer/server.py" />
-        <option value="$PROJECT_DIR$/libtransfer2/server.py" />
-        <option value="$PROJECT_DIR$/libtransfer/client.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="656" />
-    <option name="height" value="456" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PyChatV2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyChatV2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyChatV2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyChatV2" type="462c0819:PsiDirectoryNode" />
-              <item name="libtransfer" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1X3yt39tFzk2gfre5X13m5oqPVN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LAB-medewerker\PycharmProjects\PyChatV2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quint\Documents\GitHub\PyChatV2\libtransfer2" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.client">
-    <configuration name="chat_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.pychat">
+    <configuration name="build" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyChatV2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -193,7 +1039,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chat_server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,6 +1069,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pychat" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="PyChatV2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pychat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pychat.pyw -cli" type="PythonConfigurationType" factoryName="Python">
       <module name="PyChatV2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,7 +1102,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pychat.pyw" />
+      <option name="SCRIPT_NAME" value="C:\Users\LAB-medewerker\PycharmProjects\PyChatV2\pychat.py" />
       <option name="PARAMETERS" value="-cli" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -256,7 +1123,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pychat.pyw" />
+      <option name="SCRIPT_NAME" value="C:\Users\LAB-medewerker\PycharmProjects\PyChatV2\pychat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -310,19 +1177,33 @@
     <list>
       <item itemvalue="Python.pychat.pyw" />
       <item itemvalue="Python.pychat.pyw -cli" />
-      <item itemvalue="Python.chat_server" />
       <item itemvalue="Python.server" />
       <item itemvalue="Python.client" />
       <item itemvalue="Python.server (1)" />
+      <item itemvalue="Python.pychat" />
+      <item itemvalue="Python.build" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pychat" />
+        <item itemvalue="Python.build" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.server" />
         <item itemvalue="Python.server (1)" />
-        <item itemvalue="Python.chat_server" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -337,99 +1218,54 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35142255" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
-      <window_info active="true" anchor="bottom" x="-45" y="344" width="1898" height="298" id="Run" order="2" visible="true" weight="0.65346533" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32893288" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/transvert.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="842" selection-start-line="842" selection-end-line="842" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="752" selection-start-line="752" selection-end-line="752" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pychat.pyw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1527">
-          <caret line="1075" column="20" selection-start-line="1075" selection-start-column="20" selection-end-line="1075" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libtransfer/received_file">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libtransfer/mytext.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14796">
-          <caret line="1078" lean-forward="true" selection-start-line="1078" selection-end-line="1078" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libtransfer2/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="65" />
-          <folding>
-            <element signature="e#13#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libtransfer/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-          <folding>
-            <element signature="e#13#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="94" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580291417112">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="94" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1580291417112" />
+    <state x="445" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1580291157411">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="445" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1580291157411" />
+    <state width="1237" height="307" key="GridCell.Tab.0.bottom" timestamp="1580309381041">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="307" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
+    <state width="1237" height="307" key="GridCell.Tab.0.center" timestamp="1580309381041">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="307" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
+    <state width="1237" height="307" key="GridCell.Tab.0.left" timestamp="1580309381041">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="307" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
+    <state width="1237" height="307" key="GridCell.Tab.0.right" timestamp="1580309381041">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="307" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1580309381041">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
+    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1580309381041">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
+    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1580309381041">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
+    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1580309381041">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1580307577101">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1280.984@0.0.1280.984" timestamp="1580307577101" />
+    <state x="449" y="409" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580304470834">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="449" y="409" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.984@0.0.1280.984" timestamp="1580304470834" />
   </component>
 </project>
