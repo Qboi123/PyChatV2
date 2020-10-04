@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9f4c947c-82a4-45ad-9119-db85a70cb38a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pychatold.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/advBuiltins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/advIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/advOS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/advPlatform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/advRandom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/advThreading.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/core/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/core/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/devices.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/filesystem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/geo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/miscellaneous.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/qtime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/qui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/qui/canvas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/system.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/test.qdat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/ubuntuReleases.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/weather.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advUtils/web.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pychat.py" beforeDir="false" afterPath="$PROJECT_DIR$/pychat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,28 +68,29 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quint\Documents\GitHub\PyChatV2\libtransfer2" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\PyChatV2" />
       <recent name="C:\Users\quint\Documents\GitHub\PyChatV2" />
       <recent name="C:\Users\LAB-medewerker\PycharmProjects\PyChatV2" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quint\Documents\GitHub\PyChatV2\libtransfer2" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in PyChatV2">
+  <component name="RunManager" selected="Python.pychat (1)">
     <configuration name="build" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyChatV2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,18 +248,19 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.pychat.pyw -cli" />
+      <item itemvalue="Python.pychat.pyw" />
       <item itemvalue="Python.build" />
       <item itemvalue="Python.pychat (1)" />
       <item itemvalue="Python.pychat (2)" />
       <item itemvalue="Python.pychat" />
-      <item itemvalue="Python.pychat.pyw -cli" />
-      <item itemvalue="Python.pychat.pyw" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python tests.pytest in PyChatV2" />
     </list>
@@ -230,18 +274,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -255,84 +288,37 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="141" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583056616839">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599763895367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="94" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1580291417112" />
-    <state x="141" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583056616839" />
-    <state x="668" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1582896984061">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599763895367" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599763895366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="445" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1580291157411" />
-    <state x="668" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582896984061" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583056614355">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599763895366" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599763895366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583056614355" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1583056309970">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599763895366" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599763895366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="307" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583056309970" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1583056309970">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599763895366" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1599763430651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="307" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583056309970" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1583056309970">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1237" height="307" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583056309970" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1583056309970">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1237" height="307" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583056309970" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582989309923">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582989309923" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582989309923">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582989309923" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582989309923">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582989309923" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582989309923">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1580309381041" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582989309923" />
-    <state x="540" y="255" key="IDE.errors.dialog" timestamp="1582902323176">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="540" y="255" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582902323176" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1583056737061">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583056737061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1580307577101">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1280.984@0.0.1280.984" timestamp="1580307577101" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583072310165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583072310165" />
-    <state x="449" y="409" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580304470834">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="449" y="409" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.984@0.0.1280.984" timestamp="1580304470834" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583053000111">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583053000111" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599763430651" />
   </component>
 </project>

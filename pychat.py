@@ -7,7 +7,7 @@ from tkinter.filedialog import asksaveasfilename
 from tkinter.tix import *
 from typing import Type, List, Dict, Union, Optional, Tuple
 
-from advUtils.network import PackageEncoder, PackageDecoder, PackageSystem
+from advUtils.network import PacketEncoder, PacketDecoder, PacketSystem
 
 import nzt
 
@@ -256,12 +256,12 @@ def update_border():
     BORDER_LBL = 0
 
 
-class CryptedPackageSystem(PackageSystem):
+class CryptedPackageSystem(PacketSystem):
     def __init__(self, conn):
         super(CryptedPackageSystem, self).__init__(conn)
 
     def send_c(self, o, key):
-        _, data = PackageEncoder(o).get_encoded()
+        _, data = PacketEncoder(o).get_encoded()
         # print(data, key)
         data = Network(chatText).encrypt(data, key)
         length = len(data)
@@ -283,7 +283,7 @@ class CryptedPackageSystem(PackageSystem):
             data = self.conn.recv(int(length.decode()))
         except ValueError:
             return None
-        return PackageDecoder(Network(chatText).decrypt(data, key)).get_decoded()
+        return PacketDecoder(Network(chatText).decrypt(data, key)).get_decoded()
 
 
 class CustomScrollbar(Canvas):
@@ -1610,7 +1610,7 @@ class Server(ChatThread):
             s.listen(1)
 
             conn_init, addr_init = s.accept()
-            pak_init = PackageSystem(conn_init)
+            pak_init = PacketSystem(conn_init)
             serv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             serv.bind(('', 0))  # get a random empty port_
             serv.listen(1)
@@ -1625,7 +1625,7 @@ class Server(ChatThread):
 
             conn_init.close()
             conn, addr = serv.accept()
-            pak = PackageSystem(conn)
+            pak = PacketSystem(conn)
             Network.conn_array.append(conn)  # add an array entry for this connection
             Network.pak_array[conn] = CryptedPackageSystem(conn)
             self.chatText.write_succes("Connected with server " + str(addr[0]))
@@ -1709,7 +1709,7 @@ class Client(ChatThread):
         """
         conn_init2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         conn_init2.settimeout(5.0)
-        pak_init = PackageSystem(conn_init2)
+        pak_init = PacketSystem(conn_init2)
         try:
             conn_init2.connect((self.host, self.port))
         except socket.timeout:
@@ -1732,7 +1732,7 @@ class Client(ChatThread):
         # Chat connector
         conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         conn.connect((self.host, server_port))
-        pak = PackageSystem(conn)
+        pak = PacketSystem(conn)
 
         # Write status
         self.chatText.write_succes("Verbonden met: " + self.host +
@@ -1869,12 +1869,11 @@ class App(Tk):
     def __init__(self):
         super(App, self).__init__()
 
+        global app
+        app = self
+
         self.title(titleText + " " + chatVersion)
         self.protocol("WM_DELETE_WINDOW", lambda: self.exit_app())
-
-        # Load data and update theme
-        load_data()
-        update_theme()
 
         # Main frame, used for window background
         self.main_frame = Frame(self, relief=FLAT, border=0, highlightthickness=0, bg=COLOR_WIN_BG)
@@ -1899,6 +1898,10 @@ class App(Tk):
             pass_window = PasswordWindow(self.main_frame)
             pass_window.mainloop()
             dump_data()
+
+        # Load data and update theme
+        load_data()
+        update_theme()
 
         # Welcome message
         if welcomeSign:
@@ -1925,5 +1928,4 @@ if __name__ == "__main__":
     else:
         chatText = ChatText()
         # Create window
-        global app
         app = App()
